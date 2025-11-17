@@ -24,7 +24,6 @@ resource "aws_vpc" "myvpc" {
 
 resource "aws_instance" "example" {
   ami                    = "ami-03695d52f0d883f65"
-  subnet_id   			 = aws_subnet.s1.id
   instance_type          = "t3.micro"
   key_name               = "LinuxKP"
   tags = {
